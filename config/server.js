@@ -1,8 +1,8 @@
-var express = require('express')
-var app = express()
-var consign = require('consign')
-var bodyParser = require('body-parser')
-var expressValidator = require('express-validator')
+const express = require('express')
+const app = express()
+const consign = require('consign')
+const bodyParser = require('body-parser')
+const expressValidator = require('express-validator')
 
 app.set('views', './app/views')
 app.use(express.static('./app/public'))
