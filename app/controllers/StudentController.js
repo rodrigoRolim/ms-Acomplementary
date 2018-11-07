@@ -6,6 +6,8 @@ StudentController.list = function (req, res, next) {
   Student.model.find().then(students => {
     res.json(students)
     return next()
+  }).catch((err) => {
+    res.json({error: err})
   })
 }
 StudentController.save = function (req, res, next) {
