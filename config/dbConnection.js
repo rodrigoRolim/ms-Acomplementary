@@ -13,5 +13,5 @@ module.exports = {
     socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
     family: 4 // Use IPv4, skip trying IPv6
   },
-  URI: 'mongodb://localhost/Students'
+  URI: process.env.DB_URL || 'mongodb://localhost/Students'
 }
