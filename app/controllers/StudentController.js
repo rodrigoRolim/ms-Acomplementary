@@ -42,6 +42,7 @@ StudentController.delete = function (req, res) {
     return next()
   }).catch((err) => {
     res.json({error: err})
+    return next()
   })
 }
 module.exports = StudentController;
