@@ -1,3 +1,5 @@
-const app = require('./config/server')
-
-app.listen(process.env.PORT || 3000)
+const server = require('./config/server')()
+console.log(server)
+server.then((server) => 
+  console.log('server on listen in:', 3000)
+)
