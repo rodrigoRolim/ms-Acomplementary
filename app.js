@@ -1,5 +1,7 @@
 const server = require('./config/server')()
-console.log(server)
-server.then((server) => 
+
+server.then(() => 
   console.log('server on listen in:', 3000)
-)
+).catch((err) => {
+  console.err('error in server: ', err)
+})
